@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: "sans-serif";
+}
+
+header {
+  display: block;
+  padding: 1rem;
+  color: #1b4065;
+  text-align: center;
+  background-color: #f5f5f5;
+  border: 0.2px solid #ddd;
+  border-bottom: 4px solid maroon;
+  -webkit-box-shadow: 0px 0px 20px #000;
+          box-shadow: 0px 0px 20px #000;
+  border-radius: 0 0 10px 10px;
+}
+
+section {
+  display: block;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section button {
+  outline: none;
+  cursor: pointer;
+}
+
+section #addcolumns {
+  margin: 1rem auto;
+  display: block;
+  text-align: center;
+}
+
+section #addcolumns button {
+  margin-left: 0.5em;
+}
+
+section #to-do-list-button {
+  margin-left: 0.5rem;
+}
+
+section .todoList {
+  border-radius: 4px;
+  min-height: 150px;
+  background: #777;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  float: left;
+}
+
+section .todoList h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0px 0px 3px #000;
+}
+
+section .todoList .card {
+  border-radius: 4px;
+  border-bottom: 1px solid #333;
+  background: white;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+section .todoList .card button {
+  visibility: visible;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background: none;
+  border: none;
+  padding: 0.3rem;
+}
+
+section .todoList .card button:hover {
+  background: #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+section .menuContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+section .menu {
+  top: 0;
+  left: 0;
+  background-color: #ebebeb;
+  width: 500px;
+  min-height: 300px;
+  margin: auto;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+section .menuTitle {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+section .menuDescription {
+  margin-bottom: 2em;
+  line-height: 1.5em;
+}
+
+section .menuDescription textarea {
+  width: 100%;
+  height: 5em;
+  padding: 0.5em;
+  font-size: 1.1em;
+}
+
+section .comment {
+  background-color: white;
+  border: 1px solid #777;
+  border-radius: 4px;
+  margin-top: 0.5em;
+  padding: 0.5em;
+  font-size: 0.8em;
+}
+
+section .commentsInput {
+  margin-right: 0.5em;
+}
+
+section .btn-add {
+  background-color: #1b4065;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+section .btn-delete {
+  background-color: maroon;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+section #wrapper {
+  margin: 4rem auto;
+}
+
+section footer {
+  clear: both;
+  display: block;
+  margin-top: 4rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background-color: honeydew;
+  border-radius: 10px;
+}
+
+section footer ul {
+  padding: 1rem;
+}
+
+section footer ul li {
+  padding: 1rem 0;
+  font-size: 0.9rem !important;
+  line-height: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section footer ul li span {
+  background-color: #ccc;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
