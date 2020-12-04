@@ -281,13 +281,13 @@ class Comment{
 
 //-------------main------------
 
-let addTodoListInput = document.getElementById("addTodoListInput");
-let addTodoListButton = document.getElementById("addTodoListButton");
+let addcolumns_input = document.getElementById("addcolumns_input");
+let addcolumns_button = document.getElementById("addcolumns_button");
 
-addTodoListButton.addEventListener('click',()=>{
-   if ( addTodoListInput.value.trim() != ""){
-    new todoList(wrapper, addTodoListInput.value);
-    addTodoListInput.value = "";
+addcolumns_button.addEventListener('click',()=>{
+   if ( addcolumns_input.value.trim() != ""){
+    new todoList(wrapper, addcolumns_input.value);
+    addcolumns_input.value = "";
    }
 });
 
