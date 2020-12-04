@@ -32,6 +32,7 @@ class todoList{
         this.button.classList.add("btn-add");
         this.button.id = "to-do-list-button";
         this.div = document.createElement('div');
+        this.div.classList.add("empty");
         this.todoListElement = document.createElement('div');
         
         //  delete column
@@ -90,6 +91,15 @@ class Card{
     render(){
         this.card = document.createElement('div');
         this.card.classList.add("card");
+      
+
+        //draggable
+        this.card.setAttribute("draggable", "true");
+        this.card.classList.add("fill");
+        //
+
+       
+
         this.card.addEventListener('click', (e)=>{
             if(e.target != this.deleteButton){
                 this.showMenu.call(this);
@@ -107,9 +117,10 @@ class Card{
 
         this.card.append(this.p);
         this.card.append(this.deleteButton);
-        
         this.place.append(this.card);
     }
+
+   
 
     deleteCard(){
         this.card.remove();
@@ -301,3 +312,58 @@ let todoList1 = new todoList(wrapper);
 todoList1.input.value = "Card 1";
 todoList1.addToDo();
 
+
+
+// drag & drop tried
+
+/*
+const fills = document.querySelectorAll('.fill');
+const empties = document.querySelectorAll('.empty');
+
+// Fill listeners
+for (const fill of fills) {
+fill.addEventListener('dragstart', dragStart);
+fill.addEventListener('dragend', dragEnd);
+}
+
+// Loop through empty boxes and add listeners
+for (const empty of empties) {
+  empty.addEventListener('dragover', dragOver);
+  empty.addEventListener('dragenter', dragEnter);
+  empty.addEventListener('dragleave', dragLeave);
+  empty.addEventListener('drop', dragDrop);
+}
+
+function dragStart() {
+    this.className += ' hold';
+    setTimeout(() => (this.className = 'invisible'), 0);
+  }
+  
+  function dragEnd() {
+    this.className = 'fill';
+    this.className = 'card';
+  }
+
+
+  
+function dragOver(e) {
+    e.preventDefault();
+  }
+  
+  function dragEnter(e) {
+    e.preventDefault();
+    this.className += ' hovered';
+  }
+  
+  function dragLeave() {
+    this.className = 'empty';
+  }
+  
+  function dragDrop() {
+    this.className = 'empty';
+    this.append(fill);
+  }
+  
+
+  */
+ // end drag drop

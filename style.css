@@ -197,4 +197,32 @@ section footer ul li span {
   background-color: #ccc;
   font-weight: bold;
 }
+
+/*
+
+.fill {
+    
+     cursor: pointer;
+   }
+   
+   .hold {
+     border: solid 1px #ccc;
+   }
+   
+   .invisible
+   {
+       display: none!important;
+   }
+
+   .empty {
+ 
+     background: white;
+   }
+   
+   .hovered {
+     
+     border-style: dashed;
+   }
+
+   */
 /*# sourceMappingURL=style.css.map */
